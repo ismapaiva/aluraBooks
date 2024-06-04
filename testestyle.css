@@ -1,16 +1,70 @@
-.relative{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255,0, 0, .3);
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
     position: relative;
-    top: 20px;
-    left: 40px;
-}
-.absolute{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(0,255, 0, .3);
+  }
+  
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-}
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    width: 200px;
+  }
+  
+  .submenu-item {
+    position: relative;
+  }
+  
+  .submenu-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .submenu-link:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para mostrar o submenu quando o checkbox estiver marcado */
+  #toggle-categorias:checked + .menu-link + .submenu {
+    display: block;
+  }
+  
+  #toggle-subcategoria1:checked + .submenu-link + .submenu {
+    display: block;
+  }
+  
+  /* Escondendo os checkboxes */
+  #toggle-categorias,
+  #toggle-subcategoria1 {
+    display: none;
+  }
+  
