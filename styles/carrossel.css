@@ -1,4 +1,4 @@
-
+ 
 .carrossel__titulo{
     background-color: var(--branco);
     color: var(--laranja);
@@ -86,10 +86,10 @@
         margin: 1rem 8rem;
     }
     .swiper-wrapper{
-        margin-top:3rem ;
+        margin-top:1rem ;
     }
     .card{
-        margin: 2rem 25% 4rem;
+        margin: 2rem 25vw 4rem;
     }
     .descricao{
         padding-right: 1rem;
@@ -105,25 +105,23 @@
 /* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
 @media screen and (min-width: 1728px){
     .carrossel{
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
     }
     .div-carrossel-card{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        padding: 4rem 8rem;
-        gap: 8rem;
+        margin: 3rem 15vw 3rem 15vw;
+        gap: 2rem;
         height: 70%;
     }
     .swiper{
-        height: 100% ;
-    }
-    .swiper, .card{
-        margin: 0;
+        margin: 0 0 2rem 0;
+        width: 80%
     }
     .card{
-        height: 250px;
-        width: 900px;
+        margin: 3rem 0;
+        width: 60%;
         justify-content: center;
     }
     .card-descricao{
@@ -131,6 +129,19 @@
     }
     .descricao__texto{
         padding-right: 0;
+    }
+    .swiper-pagination{
+        margin: 1rem 0
+    }
+    .descricao__titulo{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .descricao__titulo-livro{
+        font-size: 1.3rem
+    }
+    .descricao__texto{
+        font-size: 1.1rem;
     }
     
 }

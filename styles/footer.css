@@ -35,5 +35,23 @@
         align-items: center;
         gap: .4rem;
         margin-bottom: 1rem;
+        color: var(--cinza-escuro);
+    }
+}
+/* RESPONSIVO DESKTOP */
+/* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1728px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3rem ;
+        padding-top:3rem ;
+    }
+    .educacao, .educacao-online, .comunidade{
+        border-left: 1px solid var(--cinza-escuro);
+        padding-left: 2rem;
+    }
+    .titulo-rodape-lista{
+        font-weight: 400;
     }
 }

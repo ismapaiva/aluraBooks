@@ -46,7 +46,7 @@
 /* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
 @media screen and (min-width: 1728px){
     .topicos{
-        padding: 4rem 40rem;
+        padding: 4rem 25vw;
     }
     .topicos__titulo{
         font-size: 2rem;
