@@ -10,7 +10,7 @@
 }
 .banner__texto{
     color: var(--branco);
-    font-weight: 500;
+    font-weight: 300;
     margin: 1rem 0 1.5rem;
     line-height: 1.5rem;
 }
@@ -18,7 +18,7 @@
     border: 1px solid var(--branco);
     border-radius:24px;
     background-color: transparent;
-    width: 70%;
+    width: 80%;
     padding: .5rem .5rem;
     color: var(--branco);
     text-align: center;
@@ -29,11 +29,43 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--branco);
-    background: url('../images/Lupa.svg') no-repeat;
-    /* background-position: 2rem; */
+    background: url('../images/Lupa.svg') no-repeat left;
     
 }
 .banner__pesquisa:focus{
     box-shadow: 1px 1px 10px var(--laranja);
-    width: 100%;
+    width: 90%;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 1024px) {
+    .banner__titulo{
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+    .banner__pesquisa{
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+        width: 40%;
+    }
+    .banner__pesquisa:focus{
+        width: 50%;
+    }
+    .banner__pesquisa::placeholder{
+        font-size: 1rem;
+    }
+}
+
+/* RESPONSIVO DESKTOP */
+/* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1728px){
+    .banner__titulo{
+        font-size: 2.5rem;
+    }
+    .banner__texto{
+        font-weight: 400;
+    }
+    .banner__pesquisa{
+        width: 35%;
+    }
 }

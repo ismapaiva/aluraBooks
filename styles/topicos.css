@@ -1,22 +1,54 @@
 .topicos{
     background: var(--azul-degrade);
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1rem;
 }
 .topicos__titulo{
     color: var(--branco);
     text-align: center;
     font-weight: 200;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .topicos__lista{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
+    line-height: 1.5rem;
 }
 .topicos__link{
     background-color: var(--laranja);
-    padding: 1rem 1.5rem;
-    border-radius: 5px;
+    padding: .5rem 1.5rem;
+    border-radius: 1px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 1024px){
+    .topicos{
+        padding: 2rem 8rem;
+    }
+    .topicos__titulo{
+        font-size: 1.5rem;
+    }
+    .topicos__lista{
+        line-height: 3rem;
+    }
+    .topicos__link{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+/* RESPONSIVO DESKTOP */
+/* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 4rem 40rem;
+    }
+    .topicos__titulo{
+        font-size: 2rem;
+    }
 }

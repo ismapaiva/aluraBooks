@@ -17,11 +17,15 @@
     display: flex;
     align-items: center;
 }
+
 .container__botao{
     display: none;;
 }
 .container__imagem{
     padding: 1rem;
+}
+.container__texto{
+    display: none;
 }
 .lista-menu{
     display: none;
@@ -47,3 +51,84 @@
     background-clip: text;
     text-transform: uppercase;
 }
+.container__titulo{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+
+/* RESPONSIVO TABLET */
+/* quando a tela for maior que 1024px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1024px) {
+    .cabecalho{
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 1.8rem;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+        padding-top: .5rem;
+
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    .opcoes{
+        display: flex;
+        gap: 2rem;
+    }
+    .opcoes__item{
+        text-transform: uppercase;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagem-transparente{
+        display: none;
+    }
+    .container__imagem-icones{
+        margin-right: 2rem;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+    .opcoes__botao:checked~.lista-menu{
+        display:block ;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+    .container__texto{
+        display: none;
+    }
+}
+
+/* RESPONSIVO DESKTOP */
+/* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1728px){
+    .container__texto{
+        display: block;
+    }
+    .container__botao-1728{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .container__imagem-icones{
+        margin-right: 0;
+    }
+    .opcoes{
+        margin-left: -40rem;
+    }
+}
+

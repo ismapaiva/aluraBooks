@@ -70,6 +70,67 @@
     font-weight: 700;
 }
 .estrelas{
-    width:45%;
+    width:4.5rem;
     margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        padding-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: block;
+    }
+    .swiper{
+        margin: 1rem 8rem;
+    }
+    .swiper-wrapper{
+        margin-top:3rem ;
+    }
+    .card{
+        margin: 2rem 25% 4rem;
+    }
+    .descricao{
+        padding-right: 1rem;
+    }
+    .descricao__texto{
+        padding-right: 4rem;
+    }
+    .estrelas{
+        width: 6rem;
+    }
+}
+/* RESPONSIVO DESKTOP */
+/* quando a tela for maior que 1728px, será aplicado as propriedades a baixo */
+@media screen and (min-width: 1728px){
+    .carrossel{
+        margin-bottom: 6rem;
+    }
+    .div-carrossel-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 8rem;
+        gap: 8rem;
+        height: 70%;
+    }
+    .swiper{
+        height: 100% ;
+    }
+    .swiper, .card{
+        margin: 0;
+    }
+    .card{
+        height: 250px;
+        width: 900px;
+        justify-content: center;
+    }
+    .card-descricao{
+        gap: .5rem;
+    }
+    .descricao__texto{
+        padding-right: 0;
+    }
+    
 }

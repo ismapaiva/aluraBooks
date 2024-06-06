@@ -1,0 +1,39 @@
+.rodape{
+    border-top: 1px solid var(--azul);
+    background-color: var(--cinza-claro);
+    padding: 1.5rem 1.5rem;
+    display: flex;
+}
+.rodape-titulo{
+    color: var(--azul);
+}
+.educacao, .educacao-online, .comunidade{
+    display: none;
+}
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem ;
+        padding-top: 2rem ;
+    }
+    .rodape-titulo{
+        font-size: 1.5rem;
+    }
+    .educacao, .educacao-online, .comunidade{
+        display: flex;
+        flex-direction: column ;
+    }
+    .titulo-rodape-lista{
+        color: var(--cinza-escuro);
+        margin-bottom: 1.4rem;
+        font-weight: 300;
+    }
+    .rodape-lista-item{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        margin-bottom: 1rem;
+    }
+}
